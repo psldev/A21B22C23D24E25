@@ -26,7 +26,7 @@ for FILE in $FILES; do
   printf "Installing file=$FILE as artifact=$ARTIFACT\n"
   mvn install:install-file \
    -DgroupId=$GROUP -DartifactId=$ARTIFACT -Dversion=$VERSION -Dpackaging=jar \
-   -Dfile=$FILE
+   -Dfile=$FILE -DlocalRepositoryPath=.
  elif [[ "$RUN_TYPE" == "print" ]]; then
   printf "        <dependency>\n"
   printf "            <groupId>$GROUP</groupId>\n"
