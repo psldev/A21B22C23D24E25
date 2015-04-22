@@ -11,7 +11,7 @@ fi
 
 RUN_TYPE=${RUN_TYPE:="print"} # values: print|install|deploy
 REPO_ID=${REPO_ID:="nexus-server"} # Id defined in user's settings.xml for authentication
-REPO_URL=${REPO_URL:="http://localhost/nexus/content/repositories/thirdparty"}
+REPO_URL=${REPO_URL:="https://github.com/psldev/A21B22C23D24E25/raw/master/"}
 
 # For each file, perform action based on run type.
 for FILE in $FILES; do
