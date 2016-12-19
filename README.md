@@ -1,41 +1,31 @@
-# A21B22C23D24E25
+# PSL DEV MAVEN OTMM REPO
 
-Publihsing new OTMM jars to the Repo:
+##Publishing new OTMM jars to the Repo
 
-##Notes:
+### Pull Repo
 
-- ~/Dev/psldev is the local copy of the Maven Repo
-- Copy the JARS that needs to be published to Maven Repo
-- Copy to local dir (e.g ~/Dev/otmm-16-jars)
+- Make a local copy of the Maven Repo (e.g. ~/Dev/psl-repo)
+- Copy the JARS that needs to be published to Repo
+- Copy to a new dir (e.g ~/Dev/otmm-XX-jars)
 
---
+###Generate POMS for JAR files
+**Make the Maven folders locally from JAR files**
 
-Generate poms and parent pom.xml
---------------------------------
-
-	> cd ~/Dev/psldev
-
-**To INSTALL (make the Maven folders locally from JAR files)**
+Replace **XX** below with the version of the OTMM (e.g. 16, 105, 731 etc)
 
 	> export RUN_TYPE=install
+	> cd ~/Dev/psl-repo
+	> ./mvn-install-jars.sh com.otmm.XX XX ~/otmm-xx-jars/*.jar
 
-**To INSTALL (show the XML)**
+
+###Update ALL-JARS for the new JAR files
+**Show the XML**
 
 	> export RUN_TYPE=print
+	> cd ~/Dev/psl-repo
+	> ./mvn-install-jars.sh com.otmm.XX XX ~/otmm-xx-jars/*.jar
 
-*[Update group and version as needed]*
-
-	> /mvn-install-jars.sh com.otmm.731 7.31 ~/otmm-731-jars/*.jar
-	> /mvn-install-jars.sh com.otmm.731 7.31 ~/otmm-731-jars/artesia/*.jar
-	> /mvn-install-jars.sh com.otmm.731 7.31 ~/otmm-731-jars/commons/*.jar
-	> /mvn-install-jars.sh com.otmm.731 7.31 ~/otmm-731-jars/otds/10.5/*.jar
-
---
-
-- Create a new pom.xml with follow and save in folder ~/otmm-731-jars/all-jars
-
-	#####For each set of output in cmd, copy all the dependencies into pom
-		
+#### Copy all the dependencies into all-jars pom		
 		<project>
 			<modelVersion>4.0.0</modelVersion>
 		    <groupId>com.otmm.731</groupId>
@@ -43,20 +33,15 @@ Generate poms and parent pom.xml
 		    <version>7.31</version>
 		    <packaging>pom</packaging>
 		    <dependencies>
-		    	[ENTER DEP HERE]
+		    	-------> [ENTER DEP HERE]
 		    </dependencies>
 		</project>
 
+##Commit and Push to the PSL Maven Repo
+Remember to push the changes to JARS and POM to the PSL Maven Repo
 
---
-
-	> cd ~/otmm-jars/all-jars
-	> mvn install
-	> mv ~/.m2/repository/com/otmm/731/all-jars ~/Dev/psldev/com/otmm/731/all-jars
-
---
-
-- Use Source Tree to Commit and Push to the PSL Maven Repo
+1. GIT command line
+2. Using SourceTree/Other Git clients
 
 
 	
