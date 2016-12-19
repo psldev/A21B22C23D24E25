@@ -17,11 +17,11 @@ Generate poms and parent pom.xml
 
 **To INSTALL (make the Maven folders locally from JAR files)**
 
-	> export RUN_TYPE=install`
+	> export RUN_TYPE=install
 
 **To INSTALL (show the XML)**
 
-	> export RUN_TYPE=print`
+	> export RUN_TYPE=print
 
 *[Update group and version as needed]*
 
@@ -32,7 +32,9 @@ Generate poms and parent pom.xml
 
 --
 
-- Create a new pom.xml with follow and save in folder  ~/otmm-731-jars/all-jars
+- Create a new pom.xml with follow and save in folder ~/otmm-731-jars/all-jars
+
+	#####For each set of output in cmd, copy all the dependencies into pom
 		
 		<project>
 			<modelVersion>4.0.0</modelVersion>
@@ -46,28 +48,13 @@ Generate poms and parent pom.xml
 		</project>
 
 
-> For each set of output in cmd, Copy all the dependencies into pom 
-
 --
 
-> cd ~/otmm-jars/all-jars
-> mvn install
-> mv ~/.m2/repository/com/otmm/731/all-jars ~/Dev/psldev/com/otmm/731/all-jars
+	> cd ~/otmm-jars/all-jars
+	> mvn install
+	> mv ~/.m2/repository/com/otmm/731/all-jars ~/Dev/psldev/com/otmm/731/all-jars
 
-
-Deploy all poms to PSL DEV Repo
--------------------------------
-
-> cd ~/Dev/psldev
-> export RUN_TYPE=install
-
-[Update group and version as needed] 
-./mvn-install-jars.sh com.otmm.731 7.31 ~/otmm-731-jars/*.jar
-./mvn-install-jars.sh com.otmm.731 7.31 ~/otmm-731-jars/artesia/*.jar
-./mvn-install-jars.sh com.otmm.731 7.31 ~/otmm-731-jars/commons/*.jar
-./mvn-install-jars.sh com.otmm.731 7.31 ~/otmm-731-jars/otds/10.5/*.jar
-
-********************************************************************
+--
 
 - Use Source Tree to Commit and Push to the PSL Maven Repo
 

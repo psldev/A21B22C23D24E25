@@ -137,7 +137,26 @@
             <artifactId>ot-transfer-scheme</artifactId>
             <version>10.5</version>
         </dependency>
-
+        <dependency>
+            <groupId>com.otmm.105</groupId>
+            <artifactId>otmm-rest-interfaces</artifactId>
+            <version>10.5</version>
+        </dependency>
+        <dependency>
+            <groupId>com.otmm.105</groupId>
+            <artifactId>otmm-rest-representations</artifactId>
+            <version>10.5</version>
+        </dependency>
+        <dependency>
+            <groupId>com.otmm.105</groupId>
+            <artifactId>otmm-rest-services</artifactId>
+            <version>10.5</version>
+        </dependency>
+        <dependency>
+            <groupId>com.otmm.105</groupId>
+            <artifactId>otmm-teams-web-105</artifactId>
+            <version>10.5</version>
+        </dependency>
         <dependency>
             <groupId>com.otmm.105</groupId>
             <artifactId>commons-beanutils-1.8.0</artifactId>
@@ -198,7 +217,6 @@
             <artifactId>commons-net-2.0</artifactId>
             <version>10.5</version>
         </dependency>
-
         <dependency>
             <groupId>com.otmm.105</groupId>
             <artifactId>otds-basics</artifactId>
@@ -209,13 +227,26 @@
             <artifactId>otds-client</artifactId>
             <version>10.5</version>
         </dependency>
-
         <dependency>
             <groupId>com.otmm.105</groupId>
             <artifactId>CreativeReviewViki</artifactId>
             <version>10.5</version>
         </dependency>
-
+        <dependency>
+            <groupId>javax.ws.rs</groupId>
+            <artifactId>javax.ws.rs-api</artifactId>
+            <version>2.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>3.1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.mail</groupId>
+            <artifactId>javax.mail-api</artifactId>
+            <version>1.5.2</version>
+        </dependency>
     </dependencies>
 </project>
 
