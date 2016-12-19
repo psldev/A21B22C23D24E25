@@ -192,7 +192,21 @@
             <artifactId>otmm-server-ext-api</artifactId>
             <version>16</version>
         </dependency>
-
+        <dependency>
+            <groupId>com.otmm.16</groupId>
+            <artifactId>otmm-rest-representations</artifactId>
+            <version>16</version>
+        </dependency>
+        <dependency>
+            <groupId>com.otmm.16</groupId>
+            <artifactId>otmm-rest-services</artifactId>
+            <version>16</version>
+        </dependency>
+        <dependency>
+            <groupId>com.otmm.16</groupId>
+            <artifactId>otmm-teams-web-16</artifactId>
+            <version>16</version>
+        </dependency>
         <dependency>
             <groupId>com.otmm.16</groupId>
             <artifactId>commons-beanutils-1.8.0</artifactId>
@@ -293,7 +307,6 @@
             <artifactId>httpmime-4.5</artifactId>
             <version>16</version>
         </dependency>
-
         <dependency>
             <groupId>com.otmm.16</groupId>
             <artifactId>otds-basics</artifactId>
@@ -304,6 +317,21 @@
             <artifactId>otds-client</artifactId>
             <version>16</version>
         </dependency>
-
+        <dependency>
+            <groupId>javax.ws.rs</groupId>
+            <artifactId>javax.ws.rs-api</artifactId>
+            <version>2.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>3.1.0</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>javax.mail</groupId>
+            <artifactId>javax.mail-api</artifactId>
+            <version>1.5.2</version>
+        </dependency>
     </dependencies>
 </project>
