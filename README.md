@@ -25,6 +25,9 @@ Replace **XX** below with the version of the OTMM (e.g. 16, 105, 731 etc)
 	> cd ~/Dev/psl-repo
 	> ./mvn-install-jars.sh com.otmm.XX XX ~/otmm-xx-jars/*.jar
 
+#### Create all-jars 
+You can either create an **all-jars** pom or copy a previous version. Be sure to update the various XML files as needed.
+
 #### Copy all the dependencies into all-jars pom		
 		<project>
 			<modelVersion>4.0.0</modelVersion>
