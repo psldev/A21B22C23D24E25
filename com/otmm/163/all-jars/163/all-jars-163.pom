@@ -832,7 +832,31 @@
             <version>163</version>
         </dependency>
 
-        
+        <dependency>
+            <groupId>com.otmm.163</groupId>
+            <artifactId>artesia-ux-ws</artifactId>
+            <version>163</version>
+        </dependency>
+        <dependency>
+            <groupId>com.otmm.163</groupId>
+            <artifactId>ffmpeg-transcoder</artifactId>
+            <version>163</version>
+        </dependency>
+        <dependency>
+            <groupId>com.otmm.163</groupId>
+            <artifactId>ot-transfer-scheme</artifactId>
+            <version>163</version>
+        </dependency>
+        <dependency>
+            <groupId>com.otmm.163</groupId>
+            <artifactId>otmm-rest-interfaces</artifactId>
+            <version>163</version>
+        </dependency>
+        <dependency>
+            <groupId>com.otmm.163</groupId>
+            <artifactId>otmm-server-ext-api</artifactId>
+            <version>163</version>
+        </dependency>        
 
     </dependencies>
 </project>
